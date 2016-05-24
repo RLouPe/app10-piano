@@ -7,13 +7,13 @@ $(document).ready(function(e) {
 	 
 	audio = window.plugins.LowLatencyAudio;
 	
-	audio.preloadFX('do','recursos/audio/C.mp3',function(msg){}, function(msg){alert{ 'Error: ' + msg}; }); //
-	audio.preloadFX('re','recursos/audio/D.mp3',function(msg){}, function(msg){alert{ 'Error: ' + msg}; }); 
-	audio.preloadFX('mi','recursos/audio/E.mp3',function(msg){}, function(msg){alert{ 'Error: ' + msg}; }); 
-	audio.preloadFX('fa','recursos/audio/F.mp3',function(msg){}, function(msg){alert{ 'Error: ' + msg}; }); 
-	audio.preloadFX('sol','recursos/audio/G.mp3',function(msg){}, function(msg){alert{ 'Error: ' + msg}; }); 
-	audio.preloadFX('la','recursos/audio/A.mp3',function(msg){}, function(msg){alert{ 'Error: ' + msg}; }); 
-	audio.preloadFX('si','recursos/audio/B.mp3',function(msg){}, function(msg){alert{ 'Error: ' + msg}; }); 
+	audio.preloadFX('do', 'audio/C.mp3', function(msg){}, function(msg){ alert( 'Error: ' + msg); }); //
+	audio.preloadFX('re', 'audio/D.mp3', function(msg){}, function(msg){ alert( 'Error: ' + msg); }); 
+	audio.preloadFX('mi', 'audio/E.mp3', function(msg){}, function(msg){ alert( 'Error: ' + msg); }); 
+	audio.preloadFX('fa', 'audio/F.mp3', function(msg){}, function(msg){ alert( 'Error: ' + msg); }); 
+	audio.preloadFX('sol', 'audio/G.mp3', function(msg){}, function(msg){ alert( 'Error: ' + msg); }); 
+	audio.preloadFX('la', 'audio/A.mp3', function(msg){}, function(msg){ alert( 'Error: ' + msg); }); 
+	audio.preloadFX('si', 'audio/B.mp3', function(msg){}, function(msg){ alert( 'Error: ' + msg); }); 
 	
 	
 	$('.nota').bind('touchstar' , function() {
