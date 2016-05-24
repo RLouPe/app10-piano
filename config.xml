@@ -12,7 +12,7 @@
 	    piano
 	</description>
 	
-	<preference name="phonegap-version" value="3..0" />
+	<preference name="phonegap-version" value="3.5.0" />
 	
 	<author href="https://build.phonegap.com" email="support@phonegap.com">
 	    Jordan Vazquez Garcia
