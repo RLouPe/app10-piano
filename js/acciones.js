@@ -28,18 +28,18 @@ $(document).ready(function(e) {
 		
 		audio = window.plugins.LowLatencyAudio;
 		
-		audio.preloadFX('DO', 'audio/DO.mp3',function(msg){},function(msg){alert('Error: ' + msg ); }); 
-		audio.preloadFX('RE', 'audio/RE.mp3',function(msg){},function(msg){alert('Error: ' + msg ); });
-		audio.preloadFX('FA', 'audio/FA.mp3',function(msg){},function(msg){alert('Error: ' + msg ); });
-		audio.preloadFX('SOL', 'audio/SOL.mp3',function(msg){},function(msg){alert('Error: ' + msg ); });
-		audio.preloadFX('LA', 'audio/LA.mp3',function(msg){},function(msg){alert('Error: ' + msg ); });
+		audio.preloadFX('DO', 'audio/RE.mp3',function(msg){},function(msg){alert('Error: ' + msg ); }); 
+		audio.preloadFX('RE', 'audio/DO.mp3',function(msg){},function(msg){alert('Error: ' + msg ); });
+		audio.preloadFX('FA', 'audio/LA.mp3',function(msg){},function(msg){alert('Error: ' + msg ); });
+		audio.preloadFX('SOL', 'audio/FA.mp3',function(msg){},function(msg){alert('Error: ' + msg ); });
+		audio.preloadFX('LA', 'audio/SOL.mp3',function(msg){},function(msg){alert('Error: ' + msg ); });
 
 		
 		$('.nota1').bind('touchstart' ,function(){
 			$(this).addClass('tocadas');
 			audio.play($(this).attr('id'));
 		}).bind('touchend', function(){
-			$(this).removeClass('tocada');
+			$(this).removeClass('tocadas');
 		});
 		});
 });
